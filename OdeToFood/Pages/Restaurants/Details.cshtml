@@ -1,0 +1,24 @@
+﻿@page "{restaurantId:int}"  
+<!-- route of the page. 
+Default is /Details 
+Custom can be: "{restaurantId:int}" or "/food/place" or "{id?:int}" etc.
+Custom route is preceeded with default value (/Details)-->
+
+@model OdeToFood.Pages.Restaurants.DetailsModel // class where all data comes from
+
+@{
+    ViewData["Title"] = "Restaurant details";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Restaurant.Name</h1>
+    <p>Restaurant description</p>
+</div>
+
+<div>
+    <p>Id: @Model.Restaurant.Id</p>
+    <p>Location: @Model.Restaurant.Location</p>
+    <p>Serves: @Model.Restaurant.Cuisine</p>
+</div>
+
+<a asp-page="./List" class="btn btn-light">All Restaurants</a>

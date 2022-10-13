@@ -1,0 +1,12 @@
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\bin\Debug\net6.0\OdeToFood.Core.deps.json
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\bin\Debug\net6.0\OdeToFood.Core.dll
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\bin\Debug\net6.0\OdeToFood.Core.pdb
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.csproj.AssemblyReference.cache
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.AssemblyInfoInputs.cache
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.AssemblyInfo.cs
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.csproj.CoreCompileInputs.cache
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.dll
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\refint\OdeToFood.Core.dll
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\OdeToFood.Core.pdb
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\net6.0\ref\OdeToFood.Core.dll

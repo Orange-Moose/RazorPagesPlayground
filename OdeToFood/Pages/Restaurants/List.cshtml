@@ -1,0 +1,63 @@
+﻿@page
+@model OdeToFood.Pages.Restaurants.ListModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Restaurants</h1>
+    <p>List of available restaurants.</p>
+</div>
+
+
+
+
+<div class="container">
+    
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm" method="get">
+                <div class="card-body row no-gutters align-items-center">
+                    <div class="col-auto">
+                        <i class="fas fa-search h4 text-body"></i>
+                    </div>
+                    <!--end of col-->
+                    <div class="col">
+                        <!--asp-for tag helper will set name and value on this input with Model.SearchQuery property value from List.cshtml.cs-->
+                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search Restaurant" asp-for="SearchQuery">
+                    </div>
+                    <!--end of col-->
+                    <div class="col-auto">
+                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                    </div>
+                    <!--end of col-->
+                </div>
+            </form>
+        </div>
+        <!--end of col-->
+    </div>
+</div>
+</br>
+
+
+
+
+<table class="table">
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
+            <td>@restaurant.Id</td>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+                <a class="btn btn-outline-success" asp-page="./Details" asp-route-restaurantId="@restaurant.Id">Details</a> <!-- asp-route ir similar to data-somevalue attribute in js  -->
+            </td>
+        </tr>
+    }
+</table>
+
+
+
+<div>
+    <p>@Model.ConfigMessage</p>
+</div>
