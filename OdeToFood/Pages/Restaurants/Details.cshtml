@@ -15,6 +15,9 @@ Custom route is preceeded with default value (/Details)-->
     <p>Restaurant description</p>
 </div>
 
+ @if(Model.FlashMessage != null) {
+     <div class="alert alert-info">@Model.FlashMessage</div>
+ }
 <div>
     <p>Id: @Model.Restaurant.Id</p>
     <p>Location: @Model.Restaurant.Location</p>
@@ -22,3 +25,4 @@ Custom route is preceeded with default value (/Details)-->
 </div>
 
 <a asp-page="./List" class="btn btn-light">All Restaurants</a>
+<a asp-page="./Edit" asp-route-restaurantId="@Model.Restaurant.Id" class="btn btn-warning">Edit</a>

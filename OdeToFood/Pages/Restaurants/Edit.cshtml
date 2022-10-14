@@ -1,0 +1,38 @@
+﻿@page "{restaurantId:int?}" 
+<!-- /Restaurants/Edit/1 is used for editing | /Restaurants/Edit is used for creating -->
+
+@using OdeToFood.Core
+@model OdeToFood.Pages.Restaurants.EditModel
+@{
+    ViewData["Title"] = "Edit restaurant";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Edit Restaurant - @Model.Restaurant.Name</h1>
+    <p>Edit restaurant details</p>
+</div>
+
+<div class="col-md-4 mx-auto">
+    <form method="post">
+        <input type="hidden" asp-for="Restaurant.Id" /> <!-- asp-for="" attribute sets the name and value of the input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" asp-for="Restaurant.Name">Name</label>
+            <input class="form-control" asp-for="Restaurant.Name" />
+            <span class="text-danger" asp-validation-for="Restaurant.Name"></span>
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" asp-for="Restaurant.Location">Location</label>
+            <input class="form-control" asp-for="Restaurant.Location" />
+            <span class="text-danger" asp-validation-for="Restaurant.Location"></span>
+        </div>
+        <div class="form-outline mb-4">
+            <label asp-for="Restaurant.Cuisine">Select Cuisine</label>
+            <select class="form-control" asp-for="Restaurant.Cuisine" asp-items="Model.Cuisines">
+            <!-- We can generate select html items using: asp-items="Html.GetEnumSelectList<CuisineType>() or better do it in a model for easier code maintenence -->
+            </select>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-success" type="submit">Save</button>
+        </div>
+    </form>
+</div>

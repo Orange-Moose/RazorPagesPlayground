@@ -36,7 +36,7 @@
         <!--end of col-->
     </div>
 </div>
-</br>
+<br />
 
 
 
@@ -50,12 +50,14 @@
             <td>@restaurant.Location</td>
             <td>@restaurant.Cuisine</td>
             <td>
-                <a class="btn btn-outline-success" asp-page="./Details" asp-route-restaurantId="@restaurant.Id">Details</a> <!-- asp-route ir similar to data-somevalue attribute in js  -->
+                <a class="btn btn-sm btn-outline-success" asp-page="./Details" asp-route-restaurantId="@restaurant.Id">Details</a> <!-- asp-route ir similar to data-somevalue attribute in js  -->
+                <a class="btn btn-sm btn-outline-warning" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">Edit</a>
+                <a class="btn btn-sm btn-outline-danger" asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">Delete</a>
             </td>
         </tr>
     }
 </table>
-
+<a asp-page="./Edit" class="btn btn-outline-success">Add new</a>
 
 
 <div>

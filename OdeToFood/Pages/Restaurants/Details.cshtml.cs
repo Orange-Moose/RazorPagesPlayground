@@ -15,6 +15,11 @@ namespace OdeToFood.Pages.Restaurants
         }
 
         public Restaurant Restaurant { get; set; }
+
+        // When asp.net core sees this attribute, it goes into the TempData structure and find value with key FlashMessage
+        [TempData]
+        public string FlashMessage { get; set; }
+
         public IActionResult OnGet(int restaurantId) // IAction result = response in nodeJS
         {
             Restaurant = _restaurantData.GetRestaurantById(restaurantId);

@@ -17,12 +17,12 @@ namespace OdeToFood.Pages.Restaurants
             _restaurantData = restaurantData;
         }
 
-        
+
         public string ConfigMessage { get; set; }
         public IEnumerable<Restaurant> Restaurants { get; set; }
 
-
-        // This attribute binds <input name="lookfor" value=""> value while invoking OnGet().
+        // Bind user input to property
+        // This attribute binds <input name="SearchQuery" value=""> to SearchQuery property while invoking OnGet().
         // So SearchQuery property can be used to get input value and also populate the DOM 
         [BindProperty(SupportsGet = true)] // by default ASP.NET Core is going to bind input properties during POST request, so we use a flag to support GET
         public string SearchQuery { get; set; } // value is set with get request
