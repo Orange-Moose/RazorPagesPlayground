@@ -13,3 +13,5 @@ C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood
 C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\net6.0\refint\OdeToFood.Data.dll
 C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\net6.0\OdeToFood.Data.pdb
 C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\net6.0\ref\OdeToFood.Data.dll
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\net6.0\OdeToFood.Data.runtimeconfig.json
+C:\Users\OrangeMoose\Documents\sites\.NET projects\Pluralsight Courses\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\net6.0\OdeToFood.Data.genruntimeconfig.cache
