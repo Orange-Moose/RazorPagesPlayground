@@ -27,6 +27,10 @@ namespace OdeToFood.Pages.Restaurants
         [BindProperty(SupportsGet = true)] // by default ASP.NET Core is going to bind input properties during POST request, so we use a flag to support GET
         public string SearchQuery { get; set; } // value is set with get request
 
+        // When asp.net core sees this attribute, it goes into the TempData structure and find value with key FlashMessage
+        [TempData]
+        public string FlashMessage { get; set; }
+
 
         public void OnGet() 
         {

@@ -43,8 +43,13 @@
         </main>
     </div>
 
+    <div class="container bottom-100">
+        @RenderSection("bottom_section", required: false) <!-- Injects html section defined as "bottom-section" from other pages-->
+    </div>
+
     <footer class="border-top footer text-muted">
         <div class="container">
+            
             &copy; 2022 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>

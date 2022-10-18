@@ -9,10 +9,13 @@
 </div>
 
 
-
+@if (Model.FlashMessage != null)
+{
+    <div class="alert alert-info">@Model.FlashMessage</div>
+}
 
 <div class="container">
-    
+
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
             <form class="card card-sm" method="get">
@@ -40,26 +43,44 @@
 
 
 
+@{/*
+ * Commnet out html with C# code inside
+    <table class="table">
+    @if (Model.Restaurants != null)
+        {
 
-<table class="table">
-    @foreach (var restaurant in Model.Restaurants)
-    {
-        <tr>
-            <td>@restaurant.Id</td>
-            <td>@restaurant.Name</td>
-            <td>@restaurant.Location</td>
-            <td>@restaurant.Cuisine</td>
-            <td>
-                <a class="btn btn-sm btn-outline-success" asp-page="./Details" asp-route-restaurantId="@restaurant.Id">Details</a> <!-- asp-route ir similar to data-somevalue attribute in js  -->
-                <a class="btn btn-sm btn-outline-warning" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">Edit</a>
-                <a class="btn btn-sm btn-outline-danger" asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">Delete</a>
+        @foreach (var restaurant in Model.Restaurants)
+            {
+                <tr>
+                <td>@restaurant.Id</td>
+                <td>@restaurant.Name</td>
+                <td>@restaurant.Location</td>
+                <td>@restaurant.Cuisine</td>
+                    <td>
+                    <a class="btn btn-sm btn-outline-success" asp-page="./Details" asp-route-restaurantId="@restaurant.Id">Details</a> <!-- asp-route ir similar to data-somevalue attribute in js  -->
+                    <a class="btn btn-sm btn-outline-warning" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">Edit</a>
+                    <a class="btn btn-sm btn-outline-danger" asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">Delete</a>
             </td>
-        </tr>
-    }
-</table>
+    </tr>
+                }
+            }
+
+    </table>
+*/}
+
+<div class="container d-flex flex-row">
+@foreach(var restaurant in Model.Restaurants) {
+    <partial name="./partials/_RestaurantCard" model="restaurant" />
+}
+</div>
+
+
+
 <a asp-page="./Edit" class="btn btn-outline-success">Add new</a>
 
-
-<div>
-    <p>@Model.ConfigMessage</p>
-</div>
+@section bottom_section {
+    <div>
+        <p>Content injected via &#64; RenderSection("bottom_section") </p>
+        <p>@Model.ConfigMessage</p>
+    </div>
+}

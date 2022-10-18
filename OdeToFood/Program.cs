@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using OdeToFood.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,8 +6,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-//TEMP - register temprary data store for development and testing
-builder.Services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+//TEMP - register temporary data store for development and testing
+//builder.Services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+
+//register sql db data store service
+builder.Services.AddScoped<IRestaurantData, SqlRestaurantData>();
+
+builder.Services.AddDbContext<OdeToFoodDbContext>(dbContextOptions =>
+{
+    dbContextOptions.UseSqlite(builder.Configuration["ConnectionStrings:OdeToFoodDbConnectionString"]);
+}); // register Db context
 
 var app = builder.Build();
 

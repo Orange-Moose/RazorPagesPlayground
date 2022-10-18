@@ -20,7 +20,7 @@ namespace OdeToFood.Pages.Restaurants
         [TempData]
         public string FlashMessage { get; set; }
 
-        public IActionResult OnGet(int restaurantId) // IAction result = response in nodeJS
+        public IActionResult OnGet(int restaurantId) // IActionResult = response in nodeJS
         {
             Restaurant = _restaurantData.GetRestaurantById(restaurantId);
 
