@@ -53,5 +53,10 @@ namespace OdeToFood.Data
         {
             return db.SaveChanges(); // updates DB and returns number of updated rows
         }
+
+        public int GetCountOfResturants()
+        {
+            return db.Restaurants.Count();
+        }
     }
 }

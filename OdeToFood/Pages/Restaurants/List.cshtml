@@ -70,7 +70,7 @@
 
 <div class="container d-flex flex-row">
 @foreach(var restaurant in Model.Restaurants) {
-    <partial name="./partials/_RestaurantCard" model="restaurant" />
+    <partial name="./partials/_RestaurantCard" model="restaurant" /> <!-- Inject partial-->
 }
 </div>
 

@@ -1,0 +1,15 @@
+﻿@using OdeToFood.Core
+@model Restaurant
+
+
+
+<div class="card m-1" style="width: 15rem;">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">Location: @Model.Location</p>
+        <p class="card-text">Serves: @Model.Cuisine</p>
+        <a class="btn btn-sm btn-outline-success" asp-page="./Details" asp-route-restaurantId="@Model.Id">Details</a> <!-- asp-route- is similar to data-somevalue attribute in js  -->
+        <a class="btn btn-sm btn-outline-warning" asp-page="./Edit" asp-route-restaurantId="@Model.Id">Edit</a>
+        <a class="btn btn-sm btn-outline-danger" asp-page="./Delete" asp-route-restaurantId="@Model.Id">Delete</a>
+    </div>
+</div>

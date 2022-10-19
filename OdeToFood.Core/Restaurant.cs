@@ -21,10 +21,10 @@ namespace OdeToFood.Core
 
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "The dfsdfName is required"), MaxLength(80) ] // model validation attributes
+        [Required(ErrorMessage = "The Name is required"), MaxLength(80) ] // model validation attributes
         public string Name { get; set; }
         
-        [Required(ErrorMessage = "The Location is sdfsrequired")]
+        [Required(ErrorMessage = "The Location is required")]
         public string Location { get; set; }
         public CuisineType Cuisine { get; set; }
     }

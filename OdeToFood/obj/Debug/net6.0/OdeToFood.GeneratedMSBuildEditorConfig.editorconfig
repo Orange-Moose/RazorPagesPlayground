@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/OrangeMoose/Documents/sites/.NET projects/Pluralsight Courses/OdeToFood/OdeToFood/OdeToFood/Pages/Restaurants/ClientRestaurants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudHNcQ2xpZW50UmVzdGF1cmFudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/OrangeMoose/Documents/sites/.NET projects/Pluralsight Courses/OdeToFood/OdeToFood/OdeToFood/Pages/Restaurants/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,6 +61,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/OrangeMoose/Documents/sites/.NET projects/Pluralsight Courses/OdeToFood/OdeToFood/OdeToFood/Pages/Restaurants/partials/_RestaurantCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudHNccGFydGlhbHNcX1Jlc3RhdXJhbnRDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OrangeMoose/Documents/sites/.NET projects/Pluralsight Courses/OdeToFood/OdeToFood/OdeToFood/Pages/Shared/Components/RestaurantCount/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcUmVzdGF1cmFudENvdW50XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/OrangeMoose/Documents/sites/.NET projects/Pluralsight Courses/OdeToFood/OdeToFood/OdeToFood/Pages/Shared/_ValidationScriptsPartial.cshtml]
