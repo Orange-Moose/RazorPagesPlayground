@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using OdeToFood.Data;
 
@@ -27,13 +28,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Middleware, process HTTP requests, order matters
+
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(); // Allows static files from wwwroot (default on), when used without arguments.
+
+app.UseNodeModules(); // Allows serving of static files from node_modules folder, requires library nuget OdeToCode by Scott Allen
 
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.MapRazorPages(); // adds endpoints for Razor pages
+app.UseEndpoints(endpoints => endpoints.MapControllers()); // adds endpoints for controller actions
 
 app.Run();

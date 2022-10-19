@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hYzWBoGaDTSt+jkq19GDhThFqKBgFPK4T6LfRgufTOd5is5D/p1Hm7PITqcJ3Z+rIPnfpCfcqVFQfQ1QuDMckQ==",
+  "dgSpecHash": "iGpxF7COteW8cWA3QpNchYU2PlRXX1XTdvJZglctRzNyvVHZjzpUSMAW3hDNY1Ue47ywWnYIGqGdq32XHju0GQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\OrangeMoose\\Documents\\sites\\.NET projects\\Pluralsight Courses\\OdeToFood\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
   "expectedPackageFiles": [
@@ -83,6 +83,7 @@
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\nuget.projectmodel\\5.11.0\\nuget.projectmodel.5.11.0.nupkg.sha512",
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\nuget.protocol\\5.11.0\\nuget.protocol.5.11.0.nupkg.sha512",
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\nuget.versioning\\6.2.1\\nuget.versioning.6.2.1.nupkg.sha512",
+    "C:\\Users\\OrangeMoose\\.nuget\\packages\\odetocode.usenodemodules\\3.0.0\\odetocode.usenodemodules.3.0.0.nupkg.sha512",
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\OrangeMoose\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

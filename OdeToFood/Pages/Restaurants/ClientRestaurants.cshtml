@@ -9,14 +9,48 @@
     <p>Client side restaurants page</p>
 </div>
 
-@section Scripts {
+<div class="container m-5 text-center">
+    <table id="restaurants" class="table"></table>
+</div>
+
+@section Scripts  {
+
+    <!-- Use CDN resources-->
+    <environment include="Development">
+        <!-- Insert DataTables plug-in for the jQuery library that adds advanced features to an HTML table.-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css" />
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
+    </environment>
+
+    <!-- Use local resources for development, debugging and testing locally-->
+    <!--
+    <environment include="Development">
+        <script src="c:\users\orangemoose\documents\sites\.net projects\pluralsight courses\odetofood\odetofood\odetofood\node_modules\datatables.net\js\jquery.datatables.js"></script>
+        <script src="c:\users\orangemoose\documents\sites\.net projects\pluralsight courses\odetofood\odetofood\odetofood\node_modules\datatables.net-dt\js\datatables.datatables.js"></script>
+        <link href="c:\users\orangemoose\documents\sites\.net projects\pluralsight courses\odetofood\odetofood\odetofood\node_modules\datatables.net-dt\css\jquery.datatables.css" rel="stylesheet" />
+
+    </environment>
+    -->
+
+    
+
     <script>
         $(function () {
-            $.ajax("/api/restaurants/", {method: "get"})
-            .then( res => {
-                console.dir(res);
-            });
-        });
 
+            const cuisines = [ "None", "Mexican", "Italian", "Greek", "American", "British", "Indian", "French", "Chinese", "Japanese" ]
+
+            $.ajax("/api/restaurants",
+                { method: "get" })
+                .then((res) => {
+                    $("#restaurants").dataTable({
+                        data: res,
+                        columns: [
+                            { "data": "name" },
+                            { "data": "location" },
+                            { "data": "cuisine", "render": (data) => cuisines[data] }
+                        ]
+                    });
+                });
+        });
     </script>
 }
